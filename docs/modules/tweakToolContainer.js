@@ -61,14 +61,26 @@ const addLabel = (tool) => {
 	let result = [];
 	const push = (title, className) => result.push(createLabel(title, className));
 
-	if (check('alt="sketch.svg"')) {
+	if (check('alt="sketch.svg"') || check('alt="Sketch"')) {
 		push('Sketch', 'sketch');
 	}
-	if (check('alt="figma.svg"')) {
+	if (check('alt="figma.svg"') || check('alt="Figma"')) {
 		push('Figma', 'figma');
 	}
-	if (check('alt="adobe-xd.svg"')) {
+	if (check('alt="adobe-xd.svg"') || check('alt="Adobe XD"')) {
 		push('Adobe XD', 'xd');
+	}
+	if (check('alt="Mobile"')) {
+		push('Mobile', 'mobile');
+	}
+	if (check('alt="Desktop"')) {
+		push('Desktop', 'desktop');
+	}
+	if (check('alt="Web"')) {
+		push('Web', 'web');
+	}
+	if (check('alt="Photoshop"')) {
+		push('Photoshop', 'photoshop');
 	}
 	return result.join(' ');
 }
@@ -84,7 +96,6 @@ const tweakToolContainer = ({ document }) => {
 		const description = `<p>${capitalizeFirstLetter(descriptionFromMarkdown)}</p>`;
 		let toolLink = title.split('href="')[1].split('"')[0];
 		// const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/;
-		toolLink.includes('')
 		tool.innerHTML = `
 			<a href="${toolLink}" class="tool__asset" target="_blank">${makeTextLogo(title)}</a>
 			<div class="tool__description">

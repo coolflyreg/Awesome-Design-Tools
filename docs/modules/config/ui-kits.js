@@ -12,25 +12,25 @@ const {
     favicon57,
     favicon32,
     favicon16,
-} = require('../favicon/favicon-adp'); 
+} = require('../favicon/favicon-adk'); 
 
 const CONFIG = {
-	markdownFile: `./Awesome-Design-Plugins.md`,
-    index: `./docs/index-plugins.html`,
+	markdownFile: `./Awesome-Design-UI-Kits.md`,
+    index: `./docs/index-kits.html`,
     promoFlawlessFeedbackBanner__title: 'Leave feedback on iOS apps',
     promoFlawlessFeedbackBanner__description: 'Turn UI issues & Bugs Into Jira tickets or Trello cards', 
     promoFlawlessFeedbackBanner__link: 'https://flawlessapp.io/feedback',
     main: {
-        title: 'Awesome Design Plugins',
-        themeColor: '#F2FAF5',
-        bodyColorScheme: '-green',
-        logoClassName: '-logo-adp',
+        title: 'Awesome Design UI Kits',
+        themeColor: '#850289',
+        bodyColorScheme: '-violet',
+        logoClassName: '-logo-adk',
         head: {
-            title: 'Awesome Design Plugins',
+            title: 'Awesome Design UI Kits',
             meta: {
-                title: 'Awesome Design Plugins',
-                themeColor: '#F2FAF5',
-                description: 'Design plugins',
+                title: 'Awesome Design UI Kits',
+                themeColor: '#850289',
+                description: 'Design kits',
                 image: 'https://flawlessapp.io/images/designtools/awesome-design-tools-sharable-image-general.png',
                 siteURL: 'https://flawlessapp.io/designplugins',
             },
@@ -61,23 +61,23 @@ const CONFIG = {
                 {
                     title: 'Plugins',
                     href: '/designplugins',
-                    isActive: true,
+                    isActive: false,
                     className: '-plugin',
                 },
                 {
                     title: 'UI Kits',
                     href: '/designkits',
-                    isActive: false,
+                    isActive: true,
                     className: '-kit',
                 },
             ],
         },
         welcomeArticle: {
-            title: 'Awesome Design Plugins',
-            logoClassName: '-logo-adp',
+            title: 'Awesome Design UI Kits',
+            logoClassName: '-logo-adk',
             description: `All the best design plugins for Sketch, Adobe XD, and Figma, gathered in one place.`,
             button: {
-                href: 'https://github.com/LisaDziuba/Awesome-Design-Tools/blob/master/Awesome-Design-Plugins.md',
+                href: 'https://github.com/LisaDziuba/Awesome-Design-Tools/blob/master/Awesome-Design-UI-Kits.md',
             },
         },
 
